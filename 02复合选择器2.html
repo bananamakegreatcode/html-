@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>02复合选择器2</title>
+		<style>
+			.div1,
+			.div2 {
+				width: 200px;
+				height: 100px;
+			}
+			
+			.div1 {
+				background-color: #7FFF00;
+			}
+			
+			.div2 {
+				background-color: aqua;
+			}
+			/*子代选择器 包含关系
+			 空格隔开
+			 设置的是 div1里的S1
+			 div1只起到一个引路的作用 不会生效*/
+			
+			.div1 #s1 {
+				color: blueviolet;
+			}
+			/*同时设置 div1里的s2 和 div2里的s4
+			 空格: 找子代
+			 逗号:并列
+			 * */
+			
+			.div1 #s2,
+			.div2 #s4 {}
+		</style>
+	</head>
+
+	<body>
+		<div class="div1">
+			<span id="s1">方块1文字1</span>
+			<span id="s2">方块2文字2</span>
+		</div>
+		<div class="div2">
+			<span id="s3">方块3文字3</span>
+			<span id="s4">方块4文字4</span>
+		</div>
+	</body>
+
+</html>

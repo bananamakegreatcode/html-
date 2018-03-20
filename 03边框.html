@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>03边框</title>
+		<style type="text/css">
+			.divfir,
+			.divsec,
+			.divthr,
+			.divfour,
+			.divfive,
+			.divsix{
+				width: 200px;
+				height: 200px;
+				text-align: center;
+			}
+			/*边框:边框的宽度 颜色 样式
+			 * css样式 border
+			 * 宽度 5px 10px
+			 * 颜色
+			 * 样式 solid dashed dotted
+			 */
+		   /*分开设置4个角*/
+		  /*集体设置4个角
+		   border:左上 右上 右下 左下
+		   * */
+		  /*行元素 a span 无法设置框高*/
+		 /*border作用于所有的html*/
+			
+			.divfir {
+				background-color: #d23935;
+				border: 5px solid black;
+				border-bottom-right-radius: 200px;
+				border-top-left-radius: 200px;
+			}
+			
+			.divsec {
+				background-color: #33934b;
+				border: 5px dashed blue;
+				border-bottom-left-radius: 200px;
+				border-top-right-radius: 200px;
+			}
+			
+			.divthr {
+				background-color: #f3c536;
+				border: 5px dotted powderblue;
+			}
+			
+			.divfour {
+				border-top: 5px solid red;
+				border-bottom: 10px dotted green;
+				border-left: 15px dashed pink;
+				border-right: 20px solid blue;
+			}
+			/*后设置的会覆盖原来的样式*/
+			.divfive{
+				border: 5px solid blue;
+				border-top: 5px solid yellow;
+			}
+			.divsix{
+				border: 40px solid black;
+				border-radius:5px ;
+				font-size: 40px;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div class="divfir"></div>
+		<div class="divsec"></div>
+		<div class="divthr"></div>
+		<!--上下左右 四个方向分别设置-->
+		<div class="divfour">
+			范伟打天下
+		</div>
+		<br />
+		<div class="divfive">
+			贪玩蓝月<br />
+		</div><br />
+		<div class="divsix">
+			<img src="../img/handsomeboy.jpg"height="200px"width="200px"/>
+		</div>
+		
+	</body>
+
+</html>

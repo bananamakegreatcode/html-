@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>05外边距的应用</title>
+		<style type="text/css">
+			.div1 {
+				border: 5px solid black;
+				width: 800px;
+				/*上下0 左右 auto自动*/
+				margin: 0 auto;
+			}
+			
+			.div2 {
+				width: 100px;
+				height: 100px;
+				background-color: #7FFF00;
+				text-align: center;
+				margin: 0 auto;
+				margin-bottom: 20px;
+			}
+			
+			a {
+				margin: 10px;
+				font-size: 25px;
+				background-color: yellow;
+			}
+			.s1{
+				font-size: 30px;
+				border:  2px solid red;
+				padding: 20px;
+			}
+			.s2{
+				font-size: 30px;
+				border: 2px dashed blue;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--1.块元素居中-->
+		<div class="div1">
+			<h1>这是网页大标题</h1>
+			<hr />
+			<p>奥术大师</p>
+			<p>7788</p>
+			<div class="div2">
+				BBBBBB
+			</div>
+			<a href="">万世荣光</a>
+			<a href="">铁马长歌</a>
+			<a href="">星辰命运</a>
+			<a href="">时光</a>
+		</div>
+		<!--2.外边距对于块元素 上下左右均生效
+			外边距对于行元素 左右生效上下不生效
+			行元素不能设置宽高
+			行元素 上下如何设置
+			内边距
+			行块元素转换
+		-->
+		<!--自身内容距离自身边框的距离
+			例子:皮肤和衣服叫内边距
+			人和墙叫外边距
+		-->
+		<span class="s1">
+			澳门皇家线上赌场上线了
+		</span>
+		<span class="s2">
+			性感荷官在线发牌 包你嗨翻天
+		</span>
+	</body>
+
+</html>
