@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>03行块转换</title>
+		<style>
+			body {
+				text-align: center;
+			}
+			
+			.div1,
+			.div2 {
+				width: 400px;
+				height: 600px;
+				/*background-color: blue;*/
+				margin: 10px;
+				border: 1px solid black;
+				display: inline-block;
+				vertical-align: text-top;
+				/*block为块
+				 inline是行
+				 inline-block行内块
+				 
+				 */
+			}
+			
+			span,
+			a {
+				width: 100px;
+				height: 100px;
+				background-color: blue;
+				display: block;
+				margin: 10px auto;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="div1">
+			<span>这是行标签</span>
+			<a href="">这是行超链接</a>
+		</div>
+		<div class="div2">
+
+		</div>
+	</body>
+
+</html>

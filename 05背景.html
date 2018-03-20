@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>05背景</title>
+		<!--background是背景
+			包括背景颜色和背景图片
+		-->
+		<style type="text/css">
+			/*1.background-image: url();
+				 URL(图片网址或在文件夹的路径)
+				 URL是统一资源定位符
+				 2.background_repeat 重复的样式
+				 no_repeat:不重复
+				 repeat:默认值 重复
+				 repeat_x,repeat-y:x/y轴重复
+				 3.backgound_size:设置背景图尺寸
+				 4.background-position背景定位
+				 left,center,right
+				 10px 20px
+				 x轴10px y轴20px
+				 */
+			/*body{
+				background-image: url(img/万世上衣.jpg);
+				background-repeat: no-repeat;
+				background-size: 30%;
+			}*/
+			.input1{
+				height: 200px;
+				background-image: url(img/万世上衣.jpg);
+				background-repeat: no-repeat;
+				background-position: 20px 20px;
+			}
+			/*去掉ul小点*/
+			ui,li{
+				/*列表无样式*/
+				list-style: none;
+				list-style-image: url(img/xx.gif);
+				}
+				/*li{
+					background-image: url(img/xx.gif);
+					background-repeat: no-repeat;
+					padding-left: 20px;
+					padding-bottom: 20px;
+					background-position: 0 5px;
+				}*/
+			.box{
+				width: 200px;height: 200px;
+				/*background-color: 
+				 * 十进制颜色值 rgb()
+				 * 范围0-255;
+				 * 0,0,0黑色
+				 * 255,255,255白色*/
+				/*透明度*/	
+				background-color: rgba(216,76,51,0.1);
+					border: 2px solid black;
+					line-height: 368px;
+			}
+
+			/*line-height线高:基线与基线之间的距离*/
+			#s1,#s2{
+				background-color: yellow;
+				font-size: 30px;
+				padding: 30px;
+			}
+			#s1{
+				line-height: 80px;
+			}
+			.tongue{
+				line-height: 300px;
+			}
+			.outt img{
+				vertical-align: middle;
+				/*图片和文字 垂直对齐
+				 给图片设置 垂直对齐方式属性
+				 vertical-align
+				 text-top text-bottom middle
+				 */
+			}
+			.div1{
+				width: 400px;
+				height: 200px;
+				border: 1px solid black;
+				font-size: 30px;
+				/*overflow: 超出父容器如何处理;
+				auto 自动调整
+				hidden 隐藏
+				scroll 滑动*/
+				overflow: scroll;
+			}
+		</style>
+	</head>
+	<body>
+		<!--背景应用-->
+		<input type="text" name="" id="" value="" class="input1"/>
+		<br />
+		<br />
+		<ul>
+			<li>范伟打天下</li>
+			<li>贪玩蓝月</li>
+			<li>澳门赌场</li>
+		</ul>
+		<span id="s1">哈哈</span><br />
+		<span id="s2">呵呵</span>
+		
+		<div class="box">
+			前段开发
+		</div>
+		<div class="outt">
+			<img src="img/舔.jpg" width="400px" height="300px"/>
+			<span class="tongue">
+				呲溜
+			</span>
+		</div>
+		<div class="div1">
+			三大技术帝垃圾收到了就爱上了大家洒落的空间撒了肯德基撒发生发生发大水发斯蒂芬
+		    <img src="img/舔.jpg"/>
+		</div>
+	</body>
+</html>
